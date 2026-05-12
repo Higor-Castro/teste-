@@ -1,10 +1,10 @@
 function reload() {
     location.reload();
-    Flutter.postMessage("getMessage");
+    getMessage();
   
 }
 function getMessage(data) {
-
+    Flutter.postMessage("getMessage");
     const body = data?.body ?? '';
     const title = data?.title ?? '';
     alert(JSON.stringify(data));
