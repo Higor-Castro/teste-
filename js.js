@@ -1,6 +1,6 @@
 function reload() {
-    location.reload;
-    getMessage();
+    Flutter.postMessage("getMessage");
+  
 }
 function getMessage(data) {
 
@@ -8,4 +8,5 @@ function getMessage(data) {
     const title = data?.message?.title ?? '';
 
     alert(title + ' ' + body);
+    location.reload();
 }
