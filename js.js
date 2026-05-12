@@ -5,10 +5,11 @@ window.addEventListener('load', () => {
     if (primeiraCarga) {
 
         primeiraCarga = false;
+        alert(1);
 
         return;
     }
-
+    alert(2);
     Flutter.postMessage("getMessage");
 
 });
