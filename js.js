@@ -4,8 +4,9 @@ function reload() {
 }
 function getMessage(data) {
 
-    const body = data?.message?.body ?? '';
-    const title = data?.message?.title ?? '';
+    const body = data?.body ?? '';
+    const title = data?.title ?? '';
+    alert(data);
 
     alert(title + ' ' + body);
     location.reload();
