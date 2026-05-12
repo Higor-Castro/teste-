@@ -4,5 +4,10 @@ function reload() {
 }
 
 function getMessage(data) {
-    alert('Atualizado !!!');
+
+    alert(
+        data.message.body +
+        ' ' +
+        data.message.title
+    );
 }
