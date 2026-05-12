@@ -17,5 +17,6 @@ function getMessage(data) {
     const body = data?.body ?? '';
     const title = data?.title ?? '';
     alert(title + ' ' + body);
+    alert(title + ' ' + body);
 
 }
