@@ -1,4 +1,5 @@
 function reload() {
+    location.reload();
     Flutter.postMessage("getMessage");
   
 }
