@@ -14,9 +14,16 @@ function reload() {
 }
 
 function getMessage(data) {
-    const body = data?.body ?? '';
     const title = data?.title ?? '';
-    alert(title + ' ' + body);
-    alert(title + ' ' + body);
+    if (title.includes("Tela 1")){
+        window.location.href = "tela1.html";
+    }
+    else if (title.includes("Tela 2")){
+        window.location.href = "tela2.html";
+    }
+    else{
+        return;
+    }
+    
 
 }
