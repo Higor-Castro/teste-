@@ -2,12 +2,10 @@ function reload() {
     location.reload;
     getMessage();
 }
-
 function getMessage(data) {
 
-    alert(
-        data.message.body +
-        ' ' +
-        data.message.title
-    );
+    const body = data?.message?.body ?? '';
+    const title = data?.message?.title ?? '';
+
+    alert(title + ' ' + body);
 }
